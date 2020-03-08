@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Bin Wu</title>
+	<link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+</head>
+
+<body onmouseover="fadein('nav')"> 
+
+<div id="wrapper">
+	<h1></h1>
+	<div id="nav" style="top: 0px;">
+        <ul>
+            <li onclick="golink('index.html')">
+                <a>Home</a>
+            </li>
+            <li onclick="golink('research.html')">
+                <a>Research</a>
+            </li>
+            <li onclick="golink('projects.html')">
+            <a>Projects</a>
+            </li>
+            <li style="color: gray;" onclick="golink('about.html')">
+            <a>About Me</a>
+            </li>
+            <li onclick="golink('teaching.html')">
+            <a>Teaching</a>
+            </li>
+        </ul>
+        </div>
+	<div id="body">
+              <br />      
+		<div id="content">
+		    <h1>A Brief Bio About Me<a href = "files/cv_wubin.pdf"><img src="image/pdf.png" title="CV" width=28px height=28px></img></a></h1>
+            <hr>
+            <br />
+            I obtained my Ph.D. degree in HKUST (2011-2015), supervised by Prof. <a href = "http://www.cse.ust.hk/~horner/">Andrew Horner</a> and Prof. <a href = "http://www.cse.ust.hk/~qyang/">Qiang Yang</a>. Prior to this, I obtained my B.E. degree from the Department of Information Security Engineering, Shanghai Jiao Tong University. I was born in Guangzhou, China, and my high school was Guangya Middle School.
+            <br />
+            <br />
+
+            <img src="image/trumpet.jpg" width="510" alt="Pic 1" />
+            <br />
+            <br />
+            I love music very much. I play trumpet, guitar, and love singing. I was crazy with trumpet when I was a secondary school student, and I was the chief of our ochestra. I love singing and won the first prize in my department in SJTU. Currently, I would like to find someone to band, just have fun. If you are interested, please contact me.
+            <br />
+            <br />
+            I also love sports. I used to be a member of the badminton team in SJTU, and I am in HKUST badminton team now. I used to play basketball a lot, but as I am no longer young, I love watching NBA games instead.
+            <br />
+            <br />
+            <img src="image/engineering_video.jpg" width="510" alt="Pic 2" />
+            <br />
+            <br />
+            Thanks to being a CSE Ph.D., I travel a lot. Below are the countries I have visited so far. The upcoming destination is Indonesia.
+
+
+        <script src="http://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
+        <script src="http://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
+        <div id="mapdiv" style="width: 700px; height: 450px;"></div>​
+        <script type="text/javascript">
+            var map;
+            AmCharts.ready(function() {
+                map                  = new AmCharts.AmMap();
+                map.pathToImages     = "http://www.amcharts.com/lib/3/images/";
+                map.panEventsEnabled = true;
+                map.backgroundColor  = "#FFFFFF";
+                map.backgroundAlpha  = 1;
+
+                map.zoomControl.panControlEnabled  = false;
+                map.zoomControl.zoomControlEnabled = false;
+
+                var dataProvider     = {
+                    mapVar          : AmCharts.maps.worldHigh,
+                    getAreasFromMap : true,
+                    areas           : [
+{ id: 'GR', showAsSelected: true },
+{ id: 'RU', showAsSelected: true },
+{ id: 'US', showAsSelected: true },
+{ id: 'BR', showAsSelected: true },
+{ id: 'ZA', showAsSelected: true },
+{ id: 'KH', showAsSelected: true },
+{ id: 'CN', showAsSelected: true },
+{ id: 'HK', showAsSelected: true },
+{ id: 'JP', showAsSelected: true },
+{ id: 'MY', showAsSelected: true },
+{ id: 'TH', showAsSelected: true },
+{ id: 'TW', showAsSelected: true }
+                    ]
+                };
+
+                map.dataProvider     = dataProvider;
+
+                map.areasSettings    = {
+                    autoZoom             : true,
+                    color                : "#CDCDCD",
+                    colorSolid           : "#5EB7DE",
+                    selectedColor        : "#5EB7DE",
+                    outlineColor         : "#666666",
+                    rollOverColor        : "#88CAE7",
+                    rollOverOutlineColor : "#FFFFFF"
+                };
+
+                map.write("mapdiv");
+            });
+        </script>
+        
+        </div>
+	</div>
+	<div id="footer">
+	</div>
+</div>
+
+<script type="text/javascript">
+    function show(id) {
+        document.getElementById(id).style.display = 'block';
+    }
+    function hide(id) {
+        document.getElementById(id).style.display = 'none';
+    }
+    function fadein(id) {
+        document.getElementById(id).style.opacity = '0.8';
+    }
+    function fadeout(id) {
+        document.getElementById(id).style.opacity = '0';
+    }
+    function changered(id) {
+        document.getElementById(id).style.backgroundColor = '#C00';
+    }
+    function changeblack(id) {
+        document.getElementById(id).style.backgroundColor = '#000';
+    }
+    function golink(txt) {
+        window.location.href=txt;
+    }
+</script>
+</body>
+</html>

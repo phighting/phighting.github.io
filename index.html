@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bin Wu</title>
+<link rel="stylesheet" href="style.css" type="text/css" charset="utf-8">
+</head>
+
+<body>
+	<div id="wrapper">
+    	<div id="profilepic">
+        	<img src="image/sit.jpg" width="300px" alt="profile picture"/>
+        
+        </div>
+        
+        <div id="intro"> 
+        
+        <h1 onmouseover=hide('commentbox') onmouseout=hide('commentbox')>Bin Wu</h1>
+        
+        <p style="font-family:Verdana, Geneva, sans-serif; font-size:18px">
+        Senior Research Engineer,
+        <br/>
+        <br/>
+        Department of Natural Language Processing,
+        <br/>
+        <br/>
+		Baidu Inc.
+        <br/>
+        <br/>
+        
+        </p>
+        
+        	<div class="contact" style="left: 101px; top: 270px">
+            
+        <div>
+            <h2>Contact Me</h2>
+            <hr />
+
+            <div>
+            <a href="mailto:bwuaa{at}cse.ust.hk"><img src="image/email.png" style="height: 48px; width: 50px;"/></a>
+            <a href="http://scholar.google.com/citations?user=crZpPjsAAAAJ&hl=en"><img src="image/gscholar.ico" style="height: 48px; width: 48px;"/></a>
+            <a href="https://www.linkedin.com/profile/view?id=367623938&trk=nav_responsive_tab_profile_pic"><img src="image/linkedin-logo.png" style="height: 48px; width: 48px;"/></a>
+            <a href="http://www.facebook.com/Ben.wubin"><img src="image/facebook.png" style="height: 48px; width: 48px;"/></a>
+            <!-- <a href="http://weibo.com/phight"><img src="image/weibo.png" style="height: 48px; width: 48px;"/></a> -->
+            <!-- <a href="http://www.renren.com/237897533"><img src="image/renren_icon.png" style="height: 48px; width: 48px;"/></a> -->
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <br />
+        
+        <div id="commentbox">
+        	<p style="font-family:'Courier New', Courier, monospace; font-size:45px; color: white;">
+				吴     斌<br/>
+            	Ben<br/>
+            	NG, Bun<br/>
+            </p>
+        </div>
+        
+      </div>
+        
+        <div id="nav">
+        <ul>
+        	<li style="color: gray;" onclick="golink('index.html')">
+            	<a>Home</a>
+            </li>
+            <li onclick="golink('research.html')">
+            	<a>Research</a>
+            </li>
+            <li onclick="golink('projects.html')">
+            <a>Projects</a>
+            </li>
+            <li onclick="golink('about.html')">
+            <a>About Me</a>
+            </li>
+            <li onclick="golink('teaching.html')">
+            <a>Teaching</a>
+            </li>
+        </ul>
+        </div>
+
+        <div id="DivTagCloudFX"></div>
+<script type="text/javascript" src="swfobject.js"></script>
+<script type="text/javascript">
+ var flashvars = {};
+ var params = {};
+ params.base = "";
+ params.scale = "noscale";
+ params.salign = "tl";
+ params.wmode = "transparent";
+ params.allowFullScreen = "true";
+ params.allowScriptAccess = "always";
+ swfobject.embedSWF("TagCloudFX.swf", "DivTagCloudFX", "600", "300", "9.0.0", false, flashvars, params);
+</script>
+    </div>
+
+<script type="text/javascript">
+    function show(id) {
+        document.getElementById(id).style.display = 'block';
+    }
+    function hide(id) {
+        document.getElementById(id).style.display = 'none';
+    }
+	function fadein(id) {
+		document.getElementById(id).style.opacity = '0.8';
+	}
+	function fadeout(id) {
+		document.getElementById(id).style.opacity = '0';
+	}
+	function changered(id) {
+		document.getElementById(id).style.backgroundColor = '#C00';
+	}
+	function changeblack(id) {
+		document.getElementById(id).style.backgroundColor = '#000';
+	}
+	function golink(txt) {
+		window.location.href=txt;
+	}
+</script>
+
+<div id="cluster" onmouseover="fadein('cluster') opacity=0" onmouseout="fadeout('cluster')">
+<a href="http://www2.clustrmaps.com/counter/maps.php?url=http://milk.sjtu.edu.cn/wubin/home.htm" id="clustrMapsLink"><img src="http://www2.clustrmaps.com/counter/index2.php?url=http://milk.sjtu.edu.cn/wubin/home.htm" style="border:0px;" alt="Locations of visitors to this page" title="Locations of visitors to this page" id="clustrMapsImg" onerror="this.onerror=null; this.src='http://clustrmaps.com/images/clustrmaps-back-soon.jpg'; document.getElementById('clustrMapsLink').href='http://clustrmaps.com';" />
+</a>
+</div>
+
+<div id="cluster" onmouseover="fadein('cluster') opacity=0" onmouseout="fadeout('cluster')">
+<a href="http://www.clustrmaps.com/map/cse.ust.hk" title="Visitor Map for cse.ust.hk"><img src="//www.clustrmaps.com/map_v2.png?u=Wm2Y&d=qmy-16jBwLwDiDQEZA1YJs8sx7HIRIHc7BSFY_owB3s" /></a>
+</div>
+
+</body>
+</html>
